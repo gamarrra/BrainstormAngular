@@ -1,0 +1,66 @@
+<div id="popup-subtarea-backshadow">
+  <div id="crearSubTask-main">
+    <form [formGroup]="infoFormSubTask" (ngSubmit)="CrearSubTarea()" #form="ngForm">
+      <div>
+        <div>
+          <div>
+            <div class="field" tabindex="1">
+              <b><label for="descripcion"> <i class="far fa-user"></i>NAME SUBTASK</label></b>
+              <input [(ngModel)]="inputTask" name="descripcion" type="text" placeholder="add subtask name..." formControlName="descripcion" />
+              <b><label for="fechaComprometida"><i class="far fa-user"></i> </label></b>
+              <input name="estado" type="hidden" formControlName="estado" />
+              <input name="tarea_Id" type="hidden" formControlName="tarea_Id"  value={{tarea_id}} />
+            </div>
+            <button (click)="HideForm()" type="submit" class="btn btn-primary">Save subtask</button>
+            <span (click)="HideForm(); this.inputTask = '';" style="margin-top:-2rem;" class="btn btn-danger">Cancel</span>
+            <div class="social-media"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<div style="display:flex;">
+    <app-navbar></app-navbar>
+
+    <div id="crear-tarea-main">
+      <form style="padding-left: 30%; padding-top: 7%" [formGroup]="infoForm" (ngSubmit)="CrearTarea()" autocomplete="off">
+        <input type='text' name="inputTodo" [(ngModel)]="inputTodo" required formControlName="descripcion">
+        <label alt='New Task' placeholder='Task To-Do'></label>
+        <span class="input-group-btn">
+          <button class="btn btn-outline-dark" type="submit">Add Task !</button>
+        </span>
+        <span style="font-size: xx-large; font-weight: bold; margin-left: 5rem; vertical-align: middle; ">Your tasks</span>
+      </form>
+
+      <div style="padding-left: 30%; padding-top:0.5%;">
+        <ul class="list">
+          <li class="list-item" *ngFor="let task of tasks; let i = index;" style="display:flex;">
+            <input type="checkbox" [checked]="task.statusId" class="hidden-box" id="{{task.tareaId}}" (click)="EditTaskStatus(task)" />
+            <label for="{{task.tareaId}}" class="check--label" style="width:100%;">
+              <span class="check--label-box"></span>
+              <span class="check--label-text">{{task.descripcion}}</span>
+            </label>
+            <div class="btn-container">
+              <span type="button" (click)="DeleteTask(task.tareaId)" class="badge bg-danger btn-actions">Delete</span>
+              <span type="button" (click)="EditTask(task.tareaId)" style="margin-left:5%;" class="badge bg-warning btn-actions">Edit</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>-->
+

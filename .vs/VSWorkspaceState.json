@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Components",
+    "\\src\\app\\Components\\navbar",
+    "\\src\\app\\Pages",
+    "\\src\\app\\Pages\\Tarea",
+    "\\src\\app\\Pages\\Tarea\\ver-tareas",
+    "\\src\\Services"
+  ],
+  "SelectedNode": "\\src\\app\\Components\\navbar\\navbar.component.html",
+  "PreviewInSolutionExplorer": false
+}

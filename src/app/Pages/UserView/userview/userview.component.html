@@ -1,0 +1,39 @@
+  <div class="card">
+    <h2>User info</h2>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label style="color: black;">First Name</label>
+          <input
+            value="{{ user.given_name }}"
+            type="text"
+            style="color:black;"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="form-group">
+          <label style="color: black;">Surname</label>
+          <input
+            value="{{ user.family_name }}"
+            type="text"
+            style="color:black;"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="form-group">
+          <label style="color: black;">Email</label>
+          <input value="{{ user.email }}" type="text" style="color:black;" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label style="color: black;">Locale</label>
+          <input value="{{ user.locale }}" type="text" style="color:black;" />
+        </div>
+      </div>
+    </div>
+  </div>

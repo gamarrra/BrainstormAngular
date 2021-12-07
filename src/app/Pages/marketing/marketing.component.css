@@ -1,0 +1,235 @@
+#mis-tareas-main {
+  width: 100%;
+}
+
+#titulo-container h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#titulo-miembros-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+#task-frame {
+  height: 70vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+  #task-frame > div {
+    margin-right: 10px;
+  }
+
+  #task-frame h2 {
+    display: inline;
+    margin-left: 10px;
+  }
+
+.subtask-container-marketing span {
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#tarea-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tareas {
+  width: 80%;
+}
+
+#titulo-container h1 {
+  margin-left: -5.8rem;
+}
+
+#titulo-container button {
+  margin-left: 4rem;
+  z-index: 1;
+}
+
+#tareas-container div {
+}
+
+.fecha-comprometida-container {
+  text-align: center;
+  font-weight: bold;
+  background: #dfdfdf;
+  border-radius: 8px;
+  width: auto;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.icons-container svg {
+  width: 1.7rem;
+}
+
+#crear-Button {
+  background-color: cadetblue;
+  color: white !important;
+  border-color: turquoise;
+}
+
+#titulo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+#tareas-main {
+  /*border: 1px solid #080c0873;
+  box-shadow: 1px 2px 6px 2px #00000073;*/
+  width: 95%;
+  /*padding: 20px 10px 20px 20px;
+  border-radius: 2%;*/
+}
+
+#tareas-container {
+  height: 80vh;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  margin-top: 3rem;
+}
+
+  #tareas-container > div {
+    margin-right: 6rem;
+  }
+
+.showForm {
+  /*opacity:1;*/
+  margin-top: 0;
+  transition: 300ms linear;
+}
+
+.hideForm {
+  /*opacity:0;*/
+  margin-top: -34rem;
+  transition: 300ms linear;
+}
+
+.icons-container {
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+
+
+.icons-container {
+  display: none;
+}
+
+  .icons-container svg:hover {
+    transform: scale(1.5);
+  }
+
+.task-container, .subtask-container-marketing {
+  text-align: center;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+  border-radius: 10px;
+}
+
+#titulo-miembros-container h2 {
+  font-size: 1rem;
+}
+
+#task-frame {
+  height: 70vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+  #task-frame > div {
+    margin-right: 10px;
+  }
+
+  #task-frame h2 {
+    display: inline;
+    margin-left: 10px;
+  }
+
+.task-container, .subtask-container-marketing {
+  text-align: center;
+  position: relative;
+}
+
+.subtask-container-marketing {
+  text-align: left;
+}
+
+  .subtask-container-marketing span {
+    margin-left: 10px;
+  }
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tarea-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tareas {
+  width: 80%;
+}
+
+#titulo-container h1 {
+  margin-left: -5.8rem;
+}
+
+#titulo-container button {
+  margin-left: 4rem;
+  z-index: 1;
+}
+
+#tareas-container div {
+}
+
+.fecha-comprometida-container {
+  text-align: center;
+  font-weight: bold;
+  background: #dfdfdf;
+  border-radius: 8px;
+  width: auto;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.icons-container svg:hover {
+  transform: scale(1.5);
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+}

@@ -1,0 +1,31 @@
+<nav class="menu" tabindex="0">
+  <div class="smartphone-menu-trigger"></div>
+  <header class="avatar">
+    <img id="avatar-img" src="assets/profile-standard.png" *ngIf="profileInfo?.picture.indexOf('http') == -1" />
+    <img id="avatar-img" src="{{ profileInfo?.picture }}" *ngIf="profileInfo?.picture.indexOf('http') >= 0" />
+    <br />
+    <h3>Usuario</h3>
+    <h2>{{ profileInfo?.name }}</h2>
+    <br />
+    <div class="my-component">
+      <app-logout-button></app-logout-button>
+    </div>
+  </header>
+  <ul>
+    <li [routerLink]="['/home']" tabindex="0" class="icon-dashboard">
+      <b><span>Inicio</span></b>
+    </li>
+    <li [routerLink]="['/MisGrupos']" tabindex="0" class="icon-users">
+      <b><span>Mis Grupos</span></b>
+    </li>
+    <li [routerLink]="['/MisTareas']" tabindex="0" class="icon-task">
+      <b><span>Mis Tareas</span></b>
+    </li>
+    <li [routerLink]="['/EnviaMail']" tabindex="0" class="icon-mail">
+      <b><span>Mail</span></b>
+    </li>
+    <li [routerLink]="['/UserView']" tabindex="0" class="icon-user">
+      <b><span>User</span></b>
+    </li>
+  </ul>
+</nav>
